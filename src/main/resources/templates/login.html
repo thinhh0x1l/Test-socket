@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form th:href="@{/login}"  method="post">
+        <span th:text="Username ">
+        </span>
+        <input type="text" name="username">
+        <span th:text="Password ">
+
+        </span>
+        <input type="password" name="password">
+        <button type="submit">Đăng nhập</button>
+    </form>
+</body>
+</html>
